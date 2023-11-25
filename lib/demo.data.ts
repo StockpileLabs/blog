@@ -1,6 +1,6 @@
 // All the demo data that used as fallbacks when there's nothing in the dataset yet
 
-export const title = 'Blog.'
+export const title = 'Stockpile'
 
 export const description = [
   {
@@ -11,31 +11,31 @@ export const description = [
         _key: '4a58edd077880',
         _type: 'span',
         marks: [],
-        text: 'A statically generated blog example using ',
+        text: '',
       },
       {
         _key: '4a58edd077881',
         _type: 'span',
         marks: ['ec5b66c9b1e0'],
-        text: 'Next.js',
+        text: '',
       },
       {
         _key: '4a58edd077882',
         _type: 'span',
         marks: [],
-        text: ' and ',
+        text: '',
       },
       {
         _key: '4a58edd077883',
         _type: 'span',
         marks: ['1f8991913ea8'],
-        text: 'Sanity',
+        text: '',
       },
       {
         _key: '4a58edd077884',
         _type: 'span',
         marks: [],
-        text: '.',
+        text: '',
       },
     ],
     markDefs: [

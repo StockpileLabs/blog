@@ -19,12 +19,12 @@ export default function CoverImage(props: CoverImageProps) {
       })}
     >
       <Image
-        className="h-auto w-full"
-        width={2000}
-        height={1000}
+        className="h-auto w-full rounded-lg"
+        width={1000}
+        height={500}
         alt=""
-        src={urlForImage(source).height(1000).width(2000).url()}
-        sizes="100vw"
+        src={urlForImage(source).height(400).width(800).url()}
+        sizes="50vw"
         priority={priority}
       />
     </div>
