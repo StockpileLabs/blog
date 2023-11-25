@@ -12,23 +12,23 @@ export default function HeroPost(
 ) {
   const { title, coverImage, date, excerpt, author, slug } = props
   return (
-    <section>
+    <section className='mt-32'>
       <div className="mb-8 md:mb-16">
         <CoverImage slug={slug} title={title} image={coverImage} priority />
       </div>
-      <div className="mb-20 md:mb-28 md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8">
+      <div className="mx-auto w-2/3 mb-20 md:mb-28 md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8">
         <div>
           <h3 className="mb-4 text-4xl leading-tight lg:text-6xl">
-            <Link href={`/posts/${slug}`} className="hover:underline">
+            <Link href={`/posts/${slug}`} className="hover:underline font-semibold">
               {title || 'Untitled'}
             </Link>
           </h3>
-          <div className="mb-4 text-lg md:mb-0">
+          <div className="mb-4 text-lg text-zinc-500 md:mb-0">
             <Date dateString={date} />
           </div>
         </div>
         <div>
-          {excerpt && <p className="mb-4 text-lg leading-relaxed">{excerpt}</p>}
+          {excerpt && <p className="mb-4 text-md text-zinc-500 leading-relaxed">{excerpt}</p>}
           {author && (
             <AuthorAvatar name={author.name} picture={author.picture} />
           )}

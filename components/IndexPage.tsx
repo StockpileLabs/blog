@@ -28,6 +28,12 @@ export default function IndexPage(props: IndexPageProps) {
       <Layout preview={preview} loading={loading}>
         <Container>
           <BlogHeader title={title} description={description} level={1} />
+          <div className='mt-32'>
+            <h1 className='text-7xl font-poppins font-bold text-center'>Stockpile{" "}
+              <span className='text-transparent bg-clip-text bg-gradient-to-r from-[#0090fe] to-[#00d8f4]'>Blog</span>
+            </h1>
+            <p className='mt-4 text-zinc-500 font-poppins text-md text-center'>Read project highlights, round reviews, and more from the Stockpile Team</p>
+          </div>
           {heroPost && (
             <HeroPost
               title={heroPost.title}

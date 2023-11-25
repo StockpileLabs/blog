@@ -19,9 +19,9 @@ export default function CoverImage(props: CoverImageProps) {
       })}
     >
       <Image
-        className="h-auto w-full rounded-lg"
-        width={1000}
-        height={500}
+        className="mx-auto h-auto w-2/3 rounded-lg"
+        width={750}
+        height={250}
         alt=""
         src={urlForImage(source).height(400).width(800).url()}
         sizes="50vw"
