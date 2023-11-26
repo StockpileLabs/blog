@@ -13,11 +13,6 @@ interface CoverImageProps {
 export default function CoverImage(props: CoverImageProps) {
   const { title, slug, image: source, priority } = props
   const image = source?.asset?._ref ? (
-    <div
-      className={cn('shadow-small', {
-        'transition-shadow duration-200 hover:shadow-medium': slug,
-      })}
-    >
       <Image
         className="mx-auto h-auto w-2/3 rounded-lg"
         width={750}
@@ -27,7 +22,6 @@ export default function CoverImage(props: CoverImageProps) {
         sizes="50vw"
         priority={priority}
       />
-    </div>
   ) : (
     <div style={{ paddingTop: '50%', backgroundColor: '#ddd' }} />
   )
