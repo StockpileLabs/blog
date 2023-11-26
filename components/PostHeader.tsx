@@ -13,7 +13,7 @@ export default function PostHeader(
       <div className="mt-32 mb-8 sm:mx-0 md:mb-16">
         <CoverImage title={title} image={coverImage} priority slug={slug} />
       </div>
-      <div className='mb-24'>
+      <div className='mb-20'>
         <PostTitle>{title}</PostTitle>
         <div className='flex gap-12 items-center justify-center'>
           <div className="hidden text-zinc-500 md:block">

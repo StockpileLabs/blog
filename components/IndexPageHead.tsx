@@ -18,7 +18,7 @@ export default function IndexPageHead({ settings }: IndexPageHeadProps) {
 
   return (
     <Head>
-      <title>{title}</title>
+      <title>Blog | Stockpile</title>
       <BlogMeta />
       <meta
         key="description"
