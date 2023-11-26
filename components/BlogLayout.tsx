@@ -1,6 +1,7 @@
 import AlertBanner from 'components/AlertBanner'
 import { Gradient } from "./gradient/Gradient";
 import { useEffect } from 'react'
+import Header from './BlogHeader';
 
 export default function BlogLayout({
   preview,
@@ -21,6 +22,7 @@ export default function BlogLayout({
   })
   return (
     <>
+      <Header />
       <div className="min-h-screen">
         <div className='-z-10 w-full h-screen fixed top-0'>
           <canvas id="gradient-canvas" data-transition-in />
