@@ -13,15 +13,15 @@ interface CoverImageProps {
 export default function CoverImage(props: CoverImageProps) {
   const { title, slug, image: source, priority } = props
   const image = source?.asset?._ref ? (
-      <Image
-        className="mx-auto h-auto w-2/3 rounded-lg"
-        width={750}
-        height={250}
-        alt=""
-        src={urlForImage(source).height(400).width(800).url()}
-        sizes="50vw"
-        priority={priority}
-      />
+    <Image
+      className="mx-auto h-auto w-2/3 rounded-lg"
+      width={750}
+      height={450}
+      alt=""
+      src={urlForImage(source).height(400).width(800).url()}
+      sizes="50vw"
+      priority={priority}
+    />
   ) : (
     <div style={{ paddingTop: '50%', backgroundColor: '#ddd' }} />
   )
